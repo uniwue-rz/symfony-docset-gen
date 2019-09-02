@@ -1,5 +1,5 @@
 diff --git a/_build/conf.py b/_build/conf.py
-index b707b25a4..4ac26f626 100644
+index b707b25a4..376ec83f2 100644
 --- a/_build/conf.py
 +++ b/_build/conf.py
 @@ -132,13 +132,16 @@ api_url = 'http://api.symfony.com/master/%s'
@@ -7,7 +7,6 @@ index b707b25a4..4ac26f626 100644
  # The theme to use for HTML and HTML Help pages.  See the documentation for
  # a list of builtin themes.
 -html_theme = "sphinx_rtd_theme"
-+#html_theme = "sphinx_rtd_theme"
 +html_theme = "alabaster"
  html_theme_path = ["_themes", ]
  
@@ -16,7 +15,8 @@ index b707b25a4..4ac26f626 100644
  # documentation.
 -#html_theme_options = {}
 +html_theme_options = {
-+    'nosidebar': True,
++        'nosidebar': True,
++        'show_powered_by': False
 +}
  
  # Add any paths that contain custom themes here, relative to this directory.
